@@ -363,3 +363,11 @@ print('')
 seRetira = cola.pop(0)
 print(f'Atendido {seRetira}')
 print(cola)
+
+#OTRA MANERA DE RECORRER UN DICCIONARIO
+for i in seleccionArgentina:
+    print(f'{i} -> {seleccionArgentina[i]}')
+print("")
+#LA MANERA MAS SENCILLA DE RECORRER UN DICCIONARIO
+for i in seleccionArgentina:
+    print(f"{seleccionArgentina[i]}")

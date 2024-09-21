@@ -1,17 +1,11 @@
 <script setup>
 import NavBar from './components/icons/NavBar.vue';
+import DatosPersonales from './components/icons/DatosPersonales.vue';
 </script>
 
 <template>
-  <header>
    <NavBar/>
-  </header>
-  <main>
-      <section>Educacion</section>
-      <section>Experiencia</section>
-      <section>Proyectos</section>
-      <section>Habilidades</section>
-  </main>
+   <DatosPersonales/>
 </template>
 
 <style scoped>
