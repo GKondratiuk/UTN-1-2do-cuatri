@@ -7,6 +7,17 @@ public class Aritmetica { //clase aritmetica
     int a;
     int b;
     
+    //El constructor es un metodo especial - construye un objeto, reserva un espacio en memoria, inicializa los atributos de la clase
+    public Aritmetica(){//constructor 1
+        System.out.println("Se está ejecutando este constructor numero uno");
+    }
+    //Sobrecarga de constructores
+    public Aritmetica(int a, int b){
+        this.a = a; 
+        this.b = b;
+        System.out.println("Se está ejecutando el constructor numero dos");
+    }
+    
     //Metodo
     public void sumarNumeros(){
         int resultado = a + b;
