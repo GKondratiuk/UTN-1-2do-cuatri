@@ -8,8 +8,23 @@
 }
 
 a {
-  text-decoration: none;
   color: var(--vt-c-white)
 }
 
 
+
+@media(max-width: 768px){
+  #app{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+  }
+}
+
+@media(min-width: 1024px){
+  #app{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
