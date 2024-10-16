@@ -36,4 +36,10 @@ public class Persona {
     }
     
     
+    public String toString(){ //convierte una cadena cada atributo 
+        return "Persona [nombre: " + this.nombre + 
+               ", sueldo " + this.sueldo + 
+               ", eliminado : " + this.eliminado + "]"; 
+    } 
+    
 }
