@@ -13,7 +13,7 @@ Auto(clase hija de Vehiculo)
 
 Bicicleta(clase hija de Vehiculo)
 -Atributos(tipo(urbana/montania/etc))
--metodos:(__init__() y __str__())
+-metodos:(__init__(color,ruedas,tipo) y __str__())
 
 Crear un objeto de cada clase
 '''
