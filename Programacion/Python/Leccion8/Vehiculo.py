@@ -17,3 +17,18 @@ Bicicleta(clase hija de Vehiculo)
 
 Crear un objeto de cada clase
 '''
+class Vehiculo:
+
+    def __init__(self,color,ruedas):
+        self.color = color
+        self.ruedas = ruedas
+
+    def __str__(self):
+        return 'Color: ' + self.color + 'Ruedas: ' + str(self.ruedas)
+
+class Auto(Vehiculo):
+    
+
+#Primer objeto de la clase padre vehiculo
+    vehiculo = Vehiculo('Blanco',4)
+    print(vehiculo)
