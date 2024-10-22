@@ -1,4 +1,6 @@
-class FiguraGeometrica: #clase padre
+from abc import ABC, abstractmethod #importamos clase abstracta y un decorador para definir metodos abstractos
+
+class FiguraGeometrica(ABC): #clase padre Hija de ABC
     def __init__(self, ancho, alto): #dunder init
         if  self._validar_valores(ancho):
             self._ancho = ancho # encapsulamos con un guion bajo
@@ -19,6 +21,8 @@ class FiguraGeometrica: #clase padre
     def ancho(self,ancho):
         if self._validar_valores(ancho):
             self._ancho = ancho
+        else:
+            print(f'valor erroneo ancho: {ancho}')
     
     @property
     def alto(self):
@@ -26,7 +30,14 @@ class FiguraGeometrica: #clase padre
     
     @alto.setter
     def alto(self,alto):
-        self._alto = alto
+        if self._validar_valores(alto):
+            self._alto = alto
+        else:
+            print(f'valor erroneo alto: {alto}')
+
+    @abstractmethod
+    def calcular_area(self):
+        pass
     
     def __str__(self): # metodo dunder str, devuelve una representación en cadena
         return f'FiguraGeometrica [Ancho: {self._ancho}, Alto: {self._alto}]'
