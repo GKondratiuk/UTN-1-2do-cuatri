@@ -33,4 +33,3 @@ print(persona4)
 
 print(f'Valor contador Personas: {Persona.contador_personas}')
 
-#Falta video 8 clase 10 pt 2
