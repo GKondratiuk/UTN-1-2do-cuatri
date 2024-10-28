@@ -69,13 +69,13 @@ class Empleado extends Persona{
                 this._sueldo = sueldo;
             }
     //creamos metodo toString para realizar una cadena de caracteres, tambien llamamos al toString de la clase padre
-            toString(){
+        toString(){
                 //return super.toString()+' '+this._idEmpleado+' '+this._sueldo;
                 //podemos convertirlo en un template string
                 return `
-                ${super.toString()}
-                ${this._idEmpleado} 
-                ${this._sueldo}`;
+        ${super.toString()}
+        ${this._idEmpleado} 
+        ${this._sueldo}`;
             }
     }
 
@@ -101,14 +101,31 @@ class Empleado extends Persona{
             this._fechaRegistro = fechaRegistro
         }
     
-        toString(){
-            return `
-            ${super.toString()}
-            ${this._idCliente}
-            ${this._fechaRegistro}
+    toString(){
+        return `
+        ${super.toString()}
+        ${this._idCliente}
+        ${this._fechaRegistro}
             `;
         }
-        
     }
+    //prueba clase persona
+    let persona1 = new Persona('Juan','Perez',32);
+    console.log(persona1.toString());
+    
+    let persona2 = new Persona('Carla','Ortega',32);
+    console.log(persona2.toString());
 
-    //VIMOS HASTA EL VIDEO 5 CLASE 9
+    //Prueba clase Empleado
+    let empleado1 = new Empleado('Pedro','Roman',18,5000);
+    console.log(empleado1.toString());
+
+    let empleado2 = new Empleado('Jonas', 'Torres', 30, 7000);
+    console.log(empleado2.toString());
+
+    //Prueba clase cliente
+    let cliente1 = new Cliente('Miguel','Zala',29,new Date());
+    console.log(cliente1.toString());
+
+    let cliente2 = new Cliente('Natala','Ortega',22, new Date());
+    console.log(cliente2.toString());
