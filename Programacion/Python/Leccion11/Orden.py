@@ -28,3 +28,8 @@ if __name__ == '__main__':
     productos1 = [producto1, producto2] #lista de productos
     orden1 = Orden(productos1) #primer objeto orden pasando la lista de productos
     print(orden1)
+    orden2 = Orden(productos1)
+    print(orden2)
+
+    #Tarea: Modificar la orden2, ingresando nuevos productos con sus nombres y precios
+    #crear una nueva lista de productos y agregarla a la orden 2

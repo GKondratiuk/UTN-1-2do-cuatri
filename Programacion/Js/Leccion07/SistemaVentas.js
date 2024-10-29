@@ -70,7 +70,16 @@ class Orden{
         return totalVenta;
     }//fin del metodo calcularTotal
 
+    mostrarOrden(){
+        let productoOrden = ' ';
+        for(let producto of this._productos){
+            productoOrden += producto.toString()+' ';
+        }//Fin del ciclo for
+        console.log(`Orden: ${this._idOrden}, Total: $${this.calcularTotal()}, Productos: ${productoOrden}`)
+    }//fin metodo mostrar orden 
 }//fin de la clase orden
 
-//falta video 5 a los 3 minutos
+//falta video 6 de la clase 10
+
+
 
