@@ -29,16 +29,10 @@ class Producto{
     }
 } //fin de la clase Producto
 
-let producto1 = new Producto('Pantalon',200)
-let producto2 = new Producto('Camisa', 150)
-console.log(producto1.toString());
-console.log(producto2.toString());
-
-//falta clase 3
 
 class Orden{
     static contadorOrdenes = 0;
-    static getMAX_PRODUCTOS(){
+    static getMAX_PRODUCTOS(){ //SIMULA UNA CONSTANTE
         return 5;
     }
 
@@ -73,13 +67,22 @@ class Orden{
     mostrarOrden(){
         let productoOrden = ' ';
         for(let producto of this._productos){
-            productoOrden += producto.toString()+' ';
+            productoOrden += '\n{' + producto.toString()+'} ';
         }//Fin del ciclo for
         console.log(`Orden: ${this._idOrden}, Total: $${this.calcularTotal()}, Productos: ${productoOrden}`)
     }//fin metodo mostrar orden 
 }//fin de la clase orden
 
-//falta video 6 de la clase 10
-
-
-
+let producto1 = new Producto('Pantalon',200);
+let producto2 = new Producto('Camisa', 150);
+let producto3 = new Producto('Cinturon',50);
+let Orden1 = new Orden();
+let Orden2 = new Orden();
+Orden1.agregarProductos(producto1);
+Orden1.agregarProductos(producto2);
+Orden1.agregarProductos(producto3);
+Orden2.agregarProductos(producto1);
+Orden2.agregarProductos(producto2);
+Orden2.agregarProductos(producto3);
+Orden1.mostrarOrden();
+Orden2.mostrarOrden();

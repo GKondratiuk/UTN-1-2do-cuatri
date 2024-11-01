@@ -31,5 +31,4 @@ if __name__ == '__main__':
     orden2 = Orden(productos1)
     print(orden2)
 
-    #Tarea: Modificar la orden2, ingresando nuevos productos con sus nombres y precios
-    #crear una nueva lista de productos y agregarla a la orden 2
+   
