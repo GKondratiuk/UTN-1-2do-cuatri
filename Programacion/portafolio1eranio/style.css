@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #333;
+    height: 20vh;
+}
+
+
+header nav i{
+    display: none;
+    color: aliceblue;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+header nav ul{
+    display: flex;
+    margin-right: 2rem;
+    gap: 2rem;
+    list-style: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+header nav a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sobreMi{
+   display: flex;
+   margin: 2rem;
+   margin-left: 5%;
+   margin-top: 15vh;
+   gap: 10vw;
+}
+.sobreMi h2{
+    font-size: 3rem;
+}
+.sobreMi p{
+    font-size: 1.5rem;
+}
+.sobreMi div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+.sobreMi div button{
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.sobreMi img{
+    height: 70vh;
+    border-radius: 150px;
+    border: inherit #33333368 10px;
+    box-shadow: rgba(104, 103, 103, 0.683) 0px 0px 30px 10px;
+}
+
+.proyectoTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: aliceblue;
+    height: 3rem;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.product {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+
+@media (max-width: 900px) {
+    .sobreMi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav i{
+        display: flex;
+    }
+    .sobreMi h2{
+        font-size: 1.3rem;
+    }
+    .sobreMi p{
+        font-size: 1rem;
+    }
+    .sobreMi img{
+         height: 30vh;
+         
+         
+    }
+
+  }
+  @media (max-width: 400px) {
+
+    .sobreMi img{
+        height: 23vh;
+       
+    }
+  }
+ 
+ 
+ 

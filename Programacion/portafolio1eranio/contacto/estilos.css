@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #333;
+    height: 15vh;
+}
+
+header nav i{
+    display: none;
+    color: aliceblue;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+header nav ul{
+    display: flex;
+    margin-right: 2rem;
+    gap: 2rem;
+    list-style: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+header nav a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+main{
+    margin: 5%;
+}
+
+
+form{
+    display: grid;
+    justify-content: center;
+    color: black;
+    gap: 1rem;
+}
+
+section input{
+    color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+} 
