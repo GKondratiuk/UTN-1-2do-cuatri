@@ -26,6 +26,15 @@ public class Orden {
             System.out.println("Se ah superado el maximo de productos: " + Orden.MAX_PRODUCTOS);
         }
     }
+    
+    public double calcularTotal(){
+        double total = 0; //variable temporal
+        for (int i = 0; i < this.contadorProductos; i++) {
+//            Producto producto = this.productos[i];
+//            total += producto.getPrecio();
+            total +=this.productos[i].getPrecio();
+        }
+        return total;
+    }
 }
 
-//hicimos hasta la clase 12 ejercicio 4

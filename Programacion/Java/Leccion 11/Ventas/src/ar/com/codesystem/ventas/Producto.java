@@ -45,6 +45,6 @@ public class Producto {
         return "Producto{" + "idProducto=" + idProducto + ", nombre=" + nombre + ", precio=" + precio + '}';
     }
     
-    //Realizado hasta clase 12 video 2
+    
     
 }
